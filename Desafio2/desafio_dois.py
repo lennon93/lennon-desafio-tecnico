@@ -10,7 +10,6 @@ def gerar_arquivo_aniversariantes_mes_atual(text_file):
             day, month, year = map(int,birthday.split("/"))
 
             if month == current_month:
-                print(name, email, birthday)
                 birthdays.append((name, email, birthday))
 
     file_output = f"consultores_aniversariantes_mes_{current_month}.txt"
